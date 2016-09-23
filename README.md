@@ -24,7 +24,7 @@ for (auto& item : vector) {
 Avoid the vastly more verbose and cryptic C++98 way:
 ```
 for (vector<Item>::iterator i = vector.begin(), e = v.end(); i != e; ++i) {
-  doSomethingWith(*i);
+    doSomethingWith(*i);
 }
 ```
 
