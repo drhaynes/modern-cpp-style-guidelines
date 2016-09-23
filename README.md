@@ -12,7 +12,7 @@ These guidlines are based on several resources:
 
 Added in C++11, use them:
 ```
-for (Item& item : vector) {
+for (auto& item : vector) {
     doSomethingWith(item);
 }
 ```
@@ -23,6 +23,14 @@ for (vector<Item>::iterator i = vector.begin(), e = v.end(); i != e; ++i) {
   doSomethingWith(*i);
 }
 ```
+
+## Vectors
+
+Should be your go-to collection type:
+* Continuous in memory.
+* Can exist on the stack or heap.
+* Out of bounds exceptions.
+* Have powerful mutators like `rotate`.
 
 ## Memory management and pointers
 
