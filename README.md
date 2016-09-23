@@ -54,14 +54,16 @@ Use `emplace_back` to add a new element (as of C++14).
 
 ## Memory management and pointers
 
-* Every `malloc` is a mistake.
-* Every `new` is a mistake.
-* Avoid `auto_ptr`, it is essentially legacy cruft at this point.
+* Every `malloc` and `free` is a mistake.
+* Every `new` and `delete` is a mistake.
+* Avoid `auto_ptr`, it is C++98 legacy cruft at this point, forget it exists.
 
 Use smart pointers:
-* `unique_ptr`
-* `shared_ptr`
-* `weak_ptr`
+* `unique_ptr` - if the object is unique.
+* `shared_ptr` - if you share an object.
+* `weak_ptr` - other, rarer scenarios.
+
+Use `make_unique` to allocate a unique pointer.
 
 ```
 vector<unique_ptr<Person>> get_People();
@@ -73,7 +75,15 @@ shared_ptr<Person> bob = people[0];
 
 ## Move semantics
 
-todo: detail them
+`vector<Point> points = getPoints();`
+
+The following will do a move, not a copy (note the `&&` operator in the method signature):
+```
+vector(vector&& that) {
+    data = that.data;
+    that.data = nullptr;
+}
+```
 
 ## Lambdas
 
