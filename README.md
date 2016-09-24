@@ -22,7 +22,8 @@ These guidlines are based on several resources:
 ## General
 
 * Use `#pragma once` rather than manual `#ifndef ...` boilderplate for ensuring headers are only included once.
-* Never put `using namespace <...>` in a header file. Because this is easily forgotten, a good rule is to never use it anywhere.
+* Never put `using namespace ...` in a header file, as the lack of context in the implementation file makes the code difficult to follow.
+* As the above rule is easily forgotten, a good rule is to never use `using namespace ...` anywhere.
 
 ## Strings
 
