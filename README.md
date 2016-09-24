@@ -65,7 +65,8 @@ public:
 };
 ```
 
-Use `constexpr` for a value that doesn't change, e.g.
+Use `constexpr` and not `#define` for constant declaration, e.g.
+
 `constexpr auto THE_ANSWER = 42;`
 
 ## Vectors
