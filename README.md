@@ -56,7 +56,7 @@ for (vector<Item>::iterator i = vector.begin(), e = v.end(); i != e; ++i) {
 
 ## `const`
 
-For instance methods that are not permitted to mutate the instance.
+Use `const` to denote member functions that are not permitted to mutate the instance.
 ```
 class Person {
 public:
