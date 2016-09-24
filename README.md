@@ -23,6 +23,18 @@ These guidlines are based on several resources:
 
 Use `#pragma once` rather than manual `#ifndef ...` boilderplate for ensuring headers are only included once.
 
+## Strings
+
+Use `std::string` for string handling.
+
+If you do this:
+```
+#include <iostream>
+using namespace std;
+```
+Then you can write this:
+`string someName = "Barry";`
+
 ## Type Inference
 
 Use `auto` wherever you can.
