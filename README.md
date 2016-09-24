@@ -61,6 +61,8 @@ For instance methods that are not permitted to mutate the instance.
 class Person {
 public:
     int GetAge() const;
+...
+};
 ```
 
 ## Vectors
