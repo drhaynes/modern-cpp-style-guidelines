@@ -19,6 +19,10 @@ These guidlines are based on several resources:
 * [C++ Seasoning by Sean Parent](https://channel9.msdn.com/Events/GoingNative/2013/Cpp-Seasoning)
 * [Peter Steinberger's C++ talk at altconf](https://realm.io/news/altconf-peter-steinberger-objective-c++-what-could-possibly-go-wrong/)
 
+## General
+
+Use `#pragma once` rather than manual `#ifndef ...` boilderplate for ensuring headers are only included once.
+
 ## Type Inference
 
 Use `auto` wherever you can.
