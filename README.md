@@ -54,6 +54,15 @@ for (vector<Item>::iterator i = vector.begin(), e = v.end(); i != e; ++i) {
 }
 ```
 
+## `const`
+
+For instance methods that are not permitted to mutate the instance.
+```
+class Person {
+public:
+    int GetAge() const;
+```
+
 ## Vectors
 
 Should be your go-to collection type:
