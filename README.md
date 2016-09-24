@@ -54,7 +54,7 @@ for (vector<Item>::iterator i = vector.begin(), e = v.end(); i != e; ++i) {
 }
 ```
 
-## `const`
+## `const` and `constexpr`
 
 Use `const` to denote member functions that are not permitted to mutate the class instance.
 ```
@@ -64,6 +64,9 @@ public:
 ...
 };
 ```
+
+Use `constexpr` for a value that doesn't change, e.g.
+`constexpr auto THE_ANSWER = 42;`
 
 ## Vectors
 
