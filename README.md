@@ -22,19 +22,17 @@ These guidlines are based on several resources:
 ## General
 
 Use `#pragma once` rather than manual `#ifndef ...` boilderplate for ensuring headers are only included once.
+Never put `using namespace <...>` in a header file. Because this is easily forgotten, a good rule is to never use it anywhere.
 
 ## Strings
 
 Use `std::string` for string handling.
 
-If you do this:
 ```
-#include <iostream>
-using namespace std;
-```
-Then you can write this:
-`string someName = "Barry";`
+#include <string>
 
+std::string someName = "Barry";`
+```
 ## Type Inference
 
 Use `auto` wherever you can.
