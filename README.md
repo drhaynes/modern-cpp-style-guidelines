@@ -1,6 +1,6 @@
 # Modern C++ Style Guidelines
 
-Modern C++ style guidelines, as per C++14 and later versions of the language.
+Modern C++ style guidelines, as per C++14 and later.
 
 From: [A Brief, Incomplete, and Mostly Wrong History of Programming Languages](http://james-iry.blogspot.co.uk/2009/05/brief-incomplete-and-mostly-wrong.html)
 
